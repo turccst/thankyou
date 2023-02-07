@@ -1,52 +1,34 @@
 <html>
   <head>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-      
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
       h1 {
         text-align: center;
         font-size: 50px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(to right, 
+        red, orange, yellow, green, blue, indigo, violet);
+        background-size: 100% 100%;
+        animation: animate 10s linear infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
       }
       body {
         margin: 0;
         padding: 0;
       }
-      
-      .donators {
-        display: inline-block;
-        position: relative;
-        text-shadow: 0 0 10px #fff;
-      }
-      
-      .donators:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: -20px;
-        left: -20px;
-        right: -20px;
-        bottom: -20px;
-        border: 5px solid transparent;
-        border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-        border-image-slice: 1;
-        animation: rainbow 2s linear infinite;
-      }
-      
-      @keyframes rainbow {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
     </style>
   </head>
   <body>
-    <h1>
-      <span class="donators">Donators:</span><br>PabloEC13<br>FRANKIEISCUTE<br>B1tt3r_c0ff3<br>MateoYAYA<br>mihajloking234<br>Alex128929o<br>hatchimmalleila<br>layla782029<br>Mrbeastie6000<br>lillie62981<br>mek49_6<br>lilsalamandor<br>bunny_girl14892<br>JennyisReal123<br>theangrybirds2master<br>TXTMOA_BTSARMY22<br>nankatsudone1<br>Haileemae98<br>NopopplsBackUP<br>Azaaaaaaaz00009<br>EnzoDuas<br>
-      <span style="color: blue;">THANKS FOR ALL DONATIONS <3</span>
-    </h1>
+    <h1>𝑫𝑶𝑵𝑨𝑻𝑶𝑹𝑺:<br>PabloEC13<br>FRANKIEISCUTE<br>B1tt3r_c0ff3<br>MateoYAYA<br>mihajloking234<br>Alex128929o<br>hatchimmalleila<br>layla782029<br>Mrbeastie6000<br>lillie62981<br>mek49_6<br>lilsalamandor<br>bunny_girl14892<br>JennyisReal123<br>theangrybirds2master<br>TXTMOA_BTSARMY22<br>nankatsudone1<br>Haileemae98<br>NopopplsBackUP<br>Azaaaaaaaz00009<br>EnzoDuas<br><span style="color: blue;">THANKS FOR ALL DONATIONS <3</span></h1>
   </body>
 </html>
